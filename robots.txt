@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://provenancelda.eu/sitemap.xml
