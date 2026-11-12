@@ -204,7 +204,7 @@ body{margin:0}
 /* 2026-11-12 content refresh */
 .herogrid{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
 .home h1{font-size:clamp(36px,4.3vw,60px);line-height:1.06}
-.proof{background:#fff;border:1.5px solid var(--ink);border-radius:3px;padding:28px 28px 22px;max-width:420px;box-shadow:8px 8px 0 var(--rule)}
+.proof{background:#fff;border:1px solid var(--ink);padding:28px 28px 22px;max-width:420px}
 .pv .proof .pk,.proof dt{font:500 11px/1.4 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
 .pv .proof .pq{font:500 22px/1.25 'Fraunces',serif;margin:0 0 20px}
 .proof dl{margin:0;border-top:1px solid var(--rule)}
