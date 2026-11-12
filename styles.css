@@ -234,3 +234,9 @@ body{margin:0}
 .lines b{font-weight:600}
 @media(min-width:861px){.jumpbar{position:sticky;top:0;z-index:20}.svc{scroll-margin-top:104px}}
 @media(max-width:860px){.jump.groups{grid-template-columns:minmax(0,1fr);gap:14px}}
+.pv p.big{font:500 clamp(25px,2.5vw,33px)/1.2 'Fraunces',serif;letter-spacing:-.01em;max-width:20em;margin:0 0 30px}
+.cred{margin:0 0 30px;border-top:1.5px solid var(--ink)}
+.cred div{display:grid;grid-template-columns:170px minmax(0,1fr);gap:6px 28px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.cred dt{font:500 12px/1.9 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin:0}
+.cred dd{margin:0;font-size:17px;line-height:1.5}
+@media(max-width:560px){.cred div{grid-template-columns:minmax(0,1fr);gap:2px}}
