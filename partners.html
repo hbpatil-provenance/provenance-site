@@ -12,13 +12,15 @@
 <meta property="og:url" content="https://provenancelda.eu/partners.html">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className+=" js"</script>
 </head>
 <body class="pv">
 <a class="skip" href="#main">Skip to content</a>
 <div class="band">Provenance is being established in the EU and expects to begin work in 2027</div>
 <header><div class="wrap"><nav class="nav">
-<a class="logo" href="index.html">PROVENANCE<small>Data Transactions · AI Governance · EU</small></a>
-<div class="menu">
+<a class="logo" href="index.html">PROVENANCE<small>Data Transactions · AI&nbsp;Governance&nbsp;·&nbsp;EU</small></a>
+<button class="mtog" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<div class="menu" id="menu">
 <a href="services.html">What we do</a>
 <a class="on" href="partners.html">Work with us</a>
 <a href="how-it-works.html">How it works</a>
@@ -127,7 +129,7 @@
 </main>
 <footer class="foot"><div class="wrap"><div class="cols">
 <div>
-<a class="logo" href="index.html">PROVENANCE<small>Data Transactions · AI Governance · EU</small></a>
+<a class="logo" href="index.html">PROVENANCE<small>Data Transactions · AI&nbsp;Governance&nbsp;·&nbsp;EU</small></a>
 <p style="margin-top:22px">Provenance is being established in the EU, and expects to begin work in 2027. It is not yet taking on engagements.</p>
 <p>Provenance is an advisory firm, not a law firm. It does not give legal advice.</p>
 </div>
@@ -143,5 +145,6 @@
 <p style="margin-top:14px">This website collects no personal data. It sets no cookies and does not track you.</p>
 </div>
 </div></div></footer>
+<script>(function(){var b=document.querySelector('.mtog'),n=document.querySelector('.nav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'Close':'Menu';});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('open')){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='Menu';b.focus();}});})();</script>
 </body>
 </html>
