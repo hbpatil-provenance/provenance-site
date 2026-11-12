@@ -37,7 +37,7 @@ body{margin:0}
 .sec{padding:96px 0}
 .hero{padding:84px 0 96px;position:relative;isolation:isolate;overflow:hidden}
 .hero .wrap{position:relative;z-index:1}
-.hero::after{content:"";position:absolute;z-index:0;top:50%;right:-64px;width:420px;height:368px;transform:translateY(-50%);background:url('img/eu-outline.svg') no-repeat center/contain;opacity:.1;pointer-events:none}
+.hero::after{content:"";position:absolute;z-index:0;top:50%;right:-48px;width:520px;height:455px;transform:translateY(-50%);background:url('img/eu-outline.svg') no-repeat center/contain;opacity:.4;pointer-events:none}
 @media(max-width:900px){.hero::after{display:none}}
 .hero .lead{margin:44px 0 40px}
 .row{display:flex;flex-wrap:wrap;gap:14px}
