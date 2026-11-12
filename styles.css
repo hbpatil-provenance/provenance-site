@@ -244,3 +244,99 @@ body{margin:0}
 /* 2026-11-12 visual identity: ink blue, ivory paper, gold line */
 .sec.dark{background-image:linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:calc((min(100vw,1200px) - 64px)/12) 100%;background-position:calc(50% + .5px) 0}
 @media(max-width:860px){.sec.dark{background-image:none}}
+
+/* 2026-11-12 visual pass: monospace is kept for evidence records only; labels in Plex Sans, sentence case */
+.band{font:500 14px/1.5 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:0}
+.eyebrow,.kic{font:600 15px/1.5 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:0;text-transform:none;margin:0 0 18px}
+.pv .no,.no{font:600 15px/1.5 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:0;text-transform:none;color:var(--blue);margin:0 0 14px}
+.jump,.jump a{font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:15px;letter-spacing:0}
+.jump.groups span{font:600 13px/1.6 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:0;text-transform:none;color:var(--mute)}
+.cred dt{font:600 15px/1.6 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:0;text-transform:none;color:var(--blue)}
+.facts dt{font:600 15px/1.5 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:0;text-transform:none}
+.steps li:before{font-family:'Fraunces',serif;font-size:22px;line-height:1.2;letter-spacing:0}
+.pv h1+p,.pv h2+p,.pv h2+ul{margin-top:22px}
+
+/* group bands on the services page */
+.grp{padding:30px 0}
+.grp b{font:500 clamp(24px,2.4vw,30px)/1.2 'Fraunces',serif;letter-spacing:-.01em;text-transform:none;color:var(--paper)}
+.grp span{font-size:17px;color:#C7D0E2}
+
+/* terms sheet: what you get, length and fee in one panel */
+.terms{background:#fff;border:1px solid var(--rule);border-top:3px solid var(--ink);border-radius:3px;padding:30px 34px 8px}
+.terms .eyebrow{margin-bottom:14px}
+.terms ul{margin-bottom:26px}
+.terms li{font-size:17px}
+.kv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin:0 -34px;border-top:1px solid var(--rule)}
+.kv div{padding:20px 34px 24px}
+.kv div+div{border-left:1px solid var(--rule)}
+.kv dt{font:600 14px/1.4 'IBM Plex Sans',system-ui,sans-serif;color:var(--mute);margin:0 0 8px}
+.kv dd{margin:0;font-size:17px;line-height:1.45}
+.kv dd.fee-v{font:500 21px/1.3 'Fraunces',serif;letter-spacing:-.005em}
+.dark .terms{color:var(--ink)}
+
+/* homepage: situations grouped by area */
+.groups{margin-top:52px;border-top:1.5px solid var(--ink)}
+.grow{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:0 40px;padding:36px 0;border-bottom:1px solid var(--rule)}
+.grow:last-child{border-bottom:0}
+.gname h3{font-size:24px;margin:0 0 10px}
+.pv .gname p{font-size:15px;color:var(--mute);margin:0}
+.gcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.gcards .card{border-bottom:0;padding:0 24px 0 24px;border-left:1px solid var(--rule);border-right:0}
+.gcards .card:first-child{padding-left:24px}
+.pv .gcards .card h3{font-size:21px}
+
+/* homepage: founder beside his words */
+.founder{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:64px;align-items:start}
+.founder img{display:block;width:100%;max-width:340px;height:auto;border-radius:3px}
+
+/* homepage: plain figures under how it works */
+.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:8px 0 28px;border-top:1.5px solid var(--ink)}
+.figs div{padding:18px 20px 4px 0}
+.figs div+div{padding-left:20px;border-left:1px solid var(--rule)}
+.figs dt{font-size:14px;color:var(--mute);margin:0 0 6px}
+.figs dd{margin:0;font:500 clamp(20px,1.9vw,25px)/1.2 'Fraunces',serif;letter-spacing:-.01em}
+
+@media(max-width:1100px){
+ .grow{grid-template-columns:minmax(0,1fr);gap:22px}
+}
+@media(max-width:860px){
+ .gcards{grid-template-columns:minmax(0,1fr)}
+ .gcards .card,.gcards .card:first-child{border-left:0;padding:22px 0;border-top:1px solid var(--rule)}
+ .founder{grid-template-columns:minmax(0,1fr);gap:28px}
+ .founder img{max-width:240px}
+ .terms{padding:24px 22px 4px}
+ .kv{margin:0 -22px}
+ .kv div{padding:18px 22px 20px}
+ .figs{grid-template-columns:minmax(0,1fr)}
+ .figs div,.figs div+div{padding:14px 0;border-left:0;border-bottom:1px solid var(--rule)}
+ .grp{padding:24px 0}
+}
+@media(max-width:560px){
+ .kv{grid-template-columns:minmax(0,1fr)}
+ .kv div+div{border-left:0;border-top:1px solid var(--rule)}
+}
+/* how it works: numbered steps (a real sequence) and a readable fee table */
+.flow{counter-reset:st}
+.flow .sit{counter-increment:st}
+.flow .sit h3:before{content:counter(st);display:block;font:500 30px/1 'Fraunces',serif;color:var(--blue);margin:0 0 14px}
+.idx.prices .r{grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:8px 28px;align-items:baseline}
+.idx.prices .r>span:empty{display:none}
+.idx.prices .r>span:last-child{font:500 19px/1.35 'Fraunces',serif}
+@media(max-width:860px){.idx.prices .r{grid-template-columns:minmax(0,1fr);gap:4px}}
+/* review fixes */
+.idx .r>.ok,.idx .r>.gap{justify-self:start}
+@media(min-width:861px){
+ .svc .terms{position:sticky;top:104px}
+ .pv:not(:has(.jumpbar)) .svc .terms{top:32px}
+}
+@media(max-width:860px){
+ .nav{padding:20px 0 18px}
+ .menu{width:100%;gap:2px 18px}
+ .menu a{padding:8px 0}
+ .menu .btn{margin-top:12px}
+ .idx:not(.prices) .r>span:nth-child(2):before,.idx:not(.prices) .r>span:nth-child(3):before{display:block;font:500 11px/1.4 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin:6px 0 2px}
+ .idx:not(.prices) .r>span:nth-child(2):before{content:"Answer"}
+ .idx:not(.prices) .r>span:nth-child(3):before{content:"Evidence"}
+}
+@media(min-width:861px){.svc .split{align-items:stretch}}
+@media(min-width:861px){.svc .terms{top:160px}.pv:not(:has(.jumpbar)) .svc .terms{top:32px}}
