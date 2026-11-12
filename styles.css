@@ -363,3 +363,11 @@ body{margin:0}
  .logo small{max-width:15em;line-height:1.5}
  .hero{padding-bottom:44px}
 }
+
+/* 2026-11-12 brand balance: larger wordmark, calmer headline scale */
+.logo{font-size:clamp(25px,2.3vw,32px);letter-spacing:.14em}
+.logo small{font-size:12px;margin-top:10px}
+.pv h1{font-size:clamp(32px,4vw,54px);line-height:1.06}
+.pv .home h1{font-size:clamp(32px,3.7vw,52px);line-height:1.08}
+.foot .logo{font-size:24px}
+@media(max-width:560px){.logo{font-size:24px;letter-spacing:.12em}}
