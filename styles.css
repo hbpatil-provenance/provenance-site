@@ -372,3 +372,9 @@ body{margin:0}
 .foot .logo{font-size:24px}
 @media(max-width:560px){.logo{font-size:24px;letter-spacing:.12em}}
 .pv .home h1{font-size:clamp(32px,4vw,54px);line-height:1.06}
+/* the panel only stays in view when nothing else shares its column (fixes overlap with the sample table on the transfers block) */
+@media(min-width:861px){
+ .svc .terms{position:static}
+ .svc .split>div>.terms:only-child{position:sticky;top:160px}
+ .pv:not(:has(.jumpbar)) .svc .split>div>.terms:only-child{top:32px}
+}
