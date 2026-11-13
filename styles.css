@@ -380,3 +380,8 @@ body{margin:0}
 }
 /* homepage hero: fixed-price reassurance under the buttons */
 .pv .assure{margin:22px 0 0;font-size:16px;color:var(--mute);padding-left:14px;border-left:3px solid var(--sun);max-width:34em}
+/* homepage hero: law-firm doorway line */
+.pv .assure.lawfirm{margin-top:12px;border-left-color:var(--blue)}
+.pv .assure.lawfirm a{text-decoration:none}
+.pv .assure.lawfirm a:hover{text-decoration:underline}
+.pv .assure.lawfirm a:hover{text-decoration-color:var(--sun)}
