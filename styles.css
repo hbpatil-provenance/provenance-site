@@ -378,3 +378,5 @@ body{margin:0}
  .svc .split>div>.terms:only-child{position:sticky;top:160px}
  .pv:not(:has(.jumpbar)) .svc .split>div>.terms:only-child{top:32px}
 }
+/* homepage hero: fixed-price reassurance under the buttons */
+.pv .assure{margin:22px 0 0;font-size:16px;color:var(--mute);padding-left:14px;border-left:3px solid var(--sun);max-width:34em}
